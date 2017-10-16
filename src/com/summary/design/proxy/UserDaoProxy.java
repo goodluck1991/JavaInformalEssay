@@ -23,4 +23,11 @@ public class UserDaoProxy implements UserDaoImpl {
         userDao.save();
         System.out.println("-------结束事务-------");
     }
+
+    @Override
+    public void delete() {
+        System.out.println("-------开启事务[delete]-------");
+        userDao.delete();
+        System.out.println("-------结束事务[delete]-------");
+    }
 }

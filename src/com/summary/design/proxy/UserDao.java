@@ -12,4 +12,9 @@ public class UserDao implements UserDaoImpl{
     public void save() {
         System.out.println("-----数据保存成功------");
     }
+
+    @Override
+    public void delete() {
+        System.out.println("-----数据删除成功-------");
+    }
 }

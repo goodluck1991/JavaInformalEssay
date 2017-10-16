@@ -7,4 +7,5 @@ package com.summary.design.proxy.impl;
  */
 public interface UserDaoImpl {
     public void save();
+    public void delete();
 }
